@@ -23,6 +23,9 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Pauses the game
+    /// </summary>
     void ActivateMenu()
     {
         Time.timeScale = 0;
@@ -30,6 +33,10 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
     }
 
+
+    /// <summary>
+    /// Unpauses the game
+    /// </summary>
     public void DeactivateMenu()
     {
         Time.timeScale = 1;
@@ -38,6 +45,9 @@ public class PauseMenu : MonoBehaviour
         isPaused = false; 
     }
 
+    /// <summary>
+    /// Exits the entire program
+    /// </summary>
     public void closeGame()
     {
         Application.Quit();
